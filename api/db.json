@@ -1,0 +1,15 @@
+{
+  "stream": [
+    {
+      "title": "Edited",
+      "description": "This doc has been edited",
+      "id": 1
+    },
+    {
+      "title": "Patch",
+      "description": "This is created with a patch method instead of put",
+      "userId": "113240132455163487061",
+      "id": 2
+    }
+  ]
+}
