@@ -14,13 +14,13 @@ class StreamEdit extends React.Component {
     this.props.editStream(this.props.params.id, formValues);
   };
   render() {
-    const { id } = this.props.params;
+    // const { id } = this.props.params;
     return (
       <div>
         <h3>Edit Stream</h3>
         <StreamForm
           onSubmit={this.onSubmit}
-          initialValues={_.pick(this.props.stream, "title", "description")} //Special: provided by redux form
+          initialValues={_.pick(this.props.stream, "title", "description")} //Special: initialValues is provided by redux form
         />
       </div>
     );

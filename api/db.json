@@ -1,8 +1,8 @@
 {
   "stream": [
     {
-      "title": "Edited",
-      "description": "This doc has been edited",
+      "title": "Ghana",
+      "description": "Warning: Each child in a list should have a unique \"key\" prop.",
       "id": 1
     },
     {
@@ -10,6 +10,18 @@
       "description": "This is created with a patch method instead of put",
       "userId": "113240132455163487061",
       "id": 2
+    },
+    {
+      "title": "dfmdmf",
+      "description": "s bxcm,b",
+      "userId": "113240132455163487061",
+      "id": 3
+    },
+    {
+      "title": "Agbeko",
+      "description": "Something would be deleted",
+      "userId": "113240132455163487061",
+      "id": 4
     }
   ]
 }
