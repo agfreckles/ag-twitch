@@ -4,15 +4,16 @@ import { signIn, signOut } from "../actions";
 
 class GoogleAuth extends React.Component {
   componentDidMount() {
-    window.gapi.load("auth2", () => {
-      window.gapi.auth2
+    let gapi = window.gapi;
+    gapi.load("auth2", () => {
+      gapi.auth2
         .init({
           client_id:
             "308521735279-ina4hb2rr55dl6m3tthagnm2hcfo30v8.apps.googleusercontent.com",
           scope: "email",
         })
         .then(() => {
-          this.auth = window.gapi.auth2.getAuthInstance();
+          this.auth = gapi.auth2.getAuthInstance();
           // this.setState({ isSignedIn: this.auth.isSignedIn.get() });
           this.onAuthChange(this.auth.isSignedIn.get());
           this.auth.isSignedIn.listen(this.onAuthChange);

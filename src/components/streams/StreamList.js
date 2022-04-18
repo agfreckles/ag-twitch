@@ -15,7 +15,10 @@ class StreamList extends React.Component {
             Edit
           </Link>{" "}
           {/* url based selection instead of reducers */}
-          <Link to={`/streams/delete/${stream.id}`} className="ui button negative">
+          <Link
+            to={`/streams/delete/${stream.id}`}
+            className="ui button negative"
+          >
             Delete
           </Link>
         </div>
@@ -39,7 +42,11 @@ class StreamList extends React.Component {
         <div key={stream.id} className="item">
           {this.renderAdmin(stream)}
           <i className="large middle aligned icon camera" />
-          <div className="content">{stream.title}</div>
+          <div className="content">
+            <Link to={`/streams/${stream.id}`} className="header">
+              {stream.title}
+            </Link>
+          </div>
           <div className="description">{stream.description}</div>
         </div>
       );
